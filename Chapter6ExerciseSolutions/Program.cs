@@ -18,14 +18,18 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
+            // Exercise 4
+            Console.WriteLine("Tell me cards");
+
+
             // Exercise 3
+            /*
             int smallestNumber = Int32.MinValue;
             int largerstNumber = Int32.MaxValue;
-            int temp = 0;
-            int number = int.Parse(Console.ReadLine());
+            int countOfNumbers = int.Parse(Console.ReadLine());
             int enteredNumber = 0;
 
-            for(int i = 0; i < number; i++)
+            for(int i = 0; i < countOfNumbers; i++)
             {
                 enteredNumber = int.Parse(Console.ReadLine());
                 if (i == 0 && enteredNumber > smallestNumber && enteredNumber <largerstNumber)
@@ -60,6 +64,7 @@ namespace Chapter6ExercisesSolutions
 
             }
             Console.Read();
+            */
 
             // Exercise 2
             /*
