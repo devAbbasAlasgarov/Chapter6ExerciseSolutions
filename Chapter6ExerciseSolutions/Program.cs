@@ -18,10 +18,71 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
+            // Exercise 3
+            int smallestNumber = Int32.MinValue;
+            int largerstNumber = Int32.MaxValue;
+            int temp = 0;
+            int number = int.Parse(Console.ReadLine());
+            int enteredNumber = 0;
+
+            for(int i = 0; i < number; i++)
+            {
+                enteredNumber = int.Parse(Console.ReadLine());
+                if (i == 0 && enteredNumber > smallestNumber && enteredNumber <largerstNumber)
+                {
+                    smallestNumber = enteredNumber;
+                    largerstNumber = enteredNumber;
+                    Console.WriteLine("Smallest number = " + smallestNumber);
+                    Console.WriteLine("Largest number = " + largerstNumber);
+                }
+                else if(i > 0 && enteredNumber>smallestNumber && enteredNumber>largerstNumber)
+                {
+                    largerstNumber = enteredNumber;
+                    Console.WriteLine("Smallest number = " + smallestNumber);
+                    Console.WriteLine("Largest number = " + largerstNumber);
+                }
+                else if (i > 0 && enteredNumber > smallestNumber && enteredNumber < largerstNumber)
+                {
+                    Console.WriteLine("Smallest number = " + smallestNumber);
+                    Console.WriteLine("Largest number = " + largerstNumber);
+                }
+                else if (i > 0 && enteredNumber < smallestNumber && enteredNumber < largerstNumber)
+                {
+                    smallestNumber = enteredNumber;
+                    Console.WriteLine("Smallest number = " + smallestNumber);
+                    Console.WriteLine("Largest number = " + largerstNumber);
+                }
+                else
+                {
+                    Console.WriteLine("Smallest number = " + smallestNumber);
+                    Console.WriteLine("Largest number = " + largerstNumber);
+                }
+
+            }
+            Console.Read();
+
+            // Exercise 2
+            /*
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 3 == 0 && i % 7 == 0)
+                {
+                    
+                }
+                else
+                {
+                    Console.Write(" " + i);
+                }
+            }
+            Console.Read();
+            */
+
             // Exercise 1
 
             // Solution 3 Do-while loop
-
+            /*
             int n = int.Parse(Console.ReadLine());
 
             int i = 1;
@@ -33,6 +94,7 @@ namespace Chapter6ExercisesSolutions
 
             } while (i <= n);
             Console.Read();
+            */
 
             // Solution 2 While loop
             /*
