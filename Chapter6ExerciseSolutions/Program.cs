@@ -19,7 +19,211 @@ namespace Chapter6ExercisesSolutions
             // Chapter 6 Exercises Solutions
 
             // Exercise 4
-            Console.WriteLine("Tell me cards");
+            /*
+             Number the cards from 2 to 14 (these numbers will match
+             the cards 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A).
+             Number the suits from 1 to 4 (1 – club, 2 – diamond,
+             3 – heart and 4 – spades). Now you can use the two
+             nested loops and print each of the cards with two
+             switch statements.
+             */
+
+            for (int suitNumber = 1; suitNumber <= 4; suitNumber++)
+            {
+                switch (suitNumber)
+                {
+                    string suitName = "1 - club";
+                    case 1:
+                        for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
+                        {
+                            switch (cardNumber)
+                            {
+                                case 1:
+                                    Console.WriteLine("club 2");
+                                    break;
+                                case 2:
+                                    Console.WriteLine("club 3");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("club 4");
+                                    break;
+                                case 4:
+                                    Console.WriteLine("club 5");
+                                    break;
+                                case 5:
+                                    Console.WriteLine("club 6");
+                                    break;
+                                case 6:
+                                    Console.WriteLine("club 7");
+                                    break;
+                                case 7:
+                                    Console.WriteLine("club 8");
+                                    break;
+                                case 8:
+                                    Console.WriteLine("club 9");
+                                    break;
+                                case 9:
+                                    Console.WriteLine("club 10");
+                                    break;
+                                case 10:
+                                    Console.WriteLine("club J");
+                                    break;
+                                case 11:
+                                    Console.WriteLine("club Q");
+                                    break;
+                                case 12:
+                                    Console.WriteLine("club K");
+                                    break;
+                                case 13:
+                                    Console.WriteLine("club A");
+                                    break;
+                            }
+                        }
+                        break;
+                    case 2:
+                        for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
+                        {
+                            switch (cardNumber)
+                            {
+                                case 1:
+                                    Console.WriteLine("diamond 2");
+                                    break;
+                                case 2:
+                                    Console.WriteLine("diamond 3");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("diamond 4");
+                                    break;
+                                case 4:
+                                    Console.WriteLine("diamond 5");
+                                    break;
+                                case 5:
+                                    Console.WriteLine("diamond 6");
+                                    break;
+                                case 6:
+                                    Console.WriteLine("diamond 7");
+                                    break;
+                                case 7:
+                                    Console.WriteLine("diamond 8");
+                                    break;
+                                case 8:
+                                    Console.WriteLine("diamond 9");
+                                    break;
+                                case 9:
+                                    Console.WriteLine("diamond 10");
+                                    break;
+                                case 10:
+                                    Console.WriteLine("diamond J");
+                                    break;
+                                case 11:
+                                    Console.WriteLine("diamond Q");
+                                    break;
+                                case 12:
+                                    Console.WriteLine("diamond K");
+                                    break;
+                                case 13:
+                                    Console.WriteLine("diamond A");
+                                    break;
+                            }
+                        }
+                        break;
+                    case 3:
+                        for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
+                        {
+                            switch (cardNumber)
+                            {
+                                case 1:
+                                    Console.WriteLine("heart 2");
+                                    break;
+                                case 2:
+                                    Console.WriteLine("heart 3");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("heart 4");
+                                    break;
+                                case 4:
+                                    Console.WriteLine("heart 5");
+                                    break;
+                                case 5:
+                                    Console.WriteLine("heart 6");
+                                    break;
+                                case 6:
+                                    Console.WriteLine("heart 7");
+                                    break;
+                                case 7:
+                                    Console.WriteLine("heart 8");
+                                    break;
+                                case 8:
+                                    Console.WriteLine("heart 9");
+                                    break;
+                                case 9:
+                                    Console.WriteLine("heart 10");
+                                    break;
+                                case 10:
+                                    Console.WriteLine("heart J");
+                                    break;
+                                case 11:
+                                    Console.WriteLine("heart Q");
+                                    break;
+                                case 12:
+                                    Console.WriteLine("heart K");
+                                    break;
+                                case 13:
+                                    Console.WriteLine("heart A");
+                                    break;
+                            }
+                        }
+                        break;
+                    case 4:
+                        for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
+                        {
+                            switch (cardNumber)
+                            {
+                                case 1:
+                                    Console.WriteLine("spades 2");
+                                    break;
+                                case 2:
+                                    Console.WriteLine("spades 3");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("spades 4");
+                                    break;
+                                case 4:
+                                    Console.WriteLine("spades 5");
+                                    break;
+                                case 5:
+                                    Console.WriteLine("spades 6");
+                                    break;
+                                case 6:
+                                    Console.WriteLine("spades 7");
+                                    break;
+                                case 7:
+                                    Console.WriteLine("spades 8");
+                                    break;
+                                case 8:
+                                    Console.WriteLine("spades 9");
+                                    break;
+                                case 9:
+                                    Console.WriteLine("spades 10");
+                                    break;
+                                case 10:
+                                    Console.WriteLine("spades J");
+                                    break;
+                                case 11:
+                                    Console.WriteLine("spades Q");
+                                    break;
+                                case 12:
+                                    Console.WriteLine("spades K");
+                                    break;
+                                case 13:
+                                    Console.WriteLine("spades A");
+                                    break;
+                            }
+                        }
+                        break;
+                }
+            }
+            Console.Read();
 
 
             // Exercise 3
@@ -124,7 +328,7 @@ namespace Chapter6ExercisesSolutions
             }
             Console.Read();
             */
-            
+
         }
     }
 }
