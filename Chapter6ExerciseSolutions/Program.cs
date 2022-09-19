@@ -18,6 +18,27 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
+            // Exercise 5
+
+            int N = int.Parse(Console.ReadLine());
+            int[] array = new int[N] ;
+            array[0] = 0;
+            array[1] = 1;
+            int sumOfFibonacciNumbers = 1;
+            Console.WriteLine("Fibonacci numbers: ");
+            Console.Write("{0} ", array[0]);
+            Console.Write("{0} ", array[1]);
+
+            for (int i = 2; i < N; i++)
+            {
+                array[i] = array[i-1] + array[i-2];
+                Console.Write(array[i] + " ");
+                sumOfFibonacciNumbers = sumOfFibonacciNumbers + array[i];
+            }
+            Console.WriteLine("\nSum of first {0} fibonacci numbers is {1}", N, sumOfFibonacciNumbers);
+            
+            Console.Read();
+
             // Exercise 4
             /*
              Number the cards from 2 to 14 (these numbers will match
@@ -27,7 +48,7 @@ namespace Chapter6ExercisesSolutions
              nested loops and print each of the cards with two
              switch statements.
              */
-
+            /*
             for (int suitNumber = 1; suitNumber <= 4; suitNumber++)
             {
                 switch (suitNumber)
@@ -232,6 +253,7 @@ namespace Chapter6ExercisesSolutions
                 
             }
             Console.Read();
+            */
 
             // Exercise 3
             /*
