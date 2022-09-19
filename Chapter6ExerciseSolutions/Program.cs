@@ -32,8 +32,8 @@ namespace Chapter6ExercisesSolutions
             {
                 switch (suitNumber)
                 {
-                    string suitName = "1 - club";
-                    case 1:
+
+                        case 1:
                         for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
                         {
                             switch (cardNumber)
@@ -80,7 +80,9 @@ namespace Chapter6ExercisesSolutions
                             }
                         }
                         break;
-                    case 2:
+
+
+                        case 2:
                         for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
                         {
                             switch (cardNumber)
@@ -127,7 +129,9 @@ namespace Chapter6ExercisesSolutions
                             }
                         }
                         break;
-                    case 3:
+
+
+                        case 3:
                         for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
                         {
                             switch (cardNumber)
@@ -174,7 +178,9 @@ namespace Chapter6ExercisesSolutions
                             }
                         }
                         break;
-                    case 4:
+
+
+                        case 4:
                         for (int cardNumber = 1; cardNumber <= 13; cardNumber++)
                         {
                             switch (cardNumber)
@@ -221,10 +227,11 @@ namespace Chapter6ExercisesSolutions
                             }
                         }
                         break;
+                        
                 }
+                
             }
             Console.Read();
-
 
             // Exercise 3
             /*
