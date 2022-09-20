@@ -17,11 +17,27 @@ namespace Chapter6ExercisesSolutions
         {
 
             // Chapter 6 Exercises Solutions
+            
+            double n = double.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
+            double factorialN = 1;
+            double sum = 0;
+
+            for(int i = 1; i <= n; i++)
+            {
+                factorialN = factorialN * i;
+                sum = sum + factorialN / Math.Pow(x,i);
+            }
+            
+            Console.WriteLine(sum+1);
+            Console.Read();
+            Console.Read();
 
             // Exercise 8
 
             // Calculating n-th Catalan number by given n
-
+            // CatalanNumber = (2n * (2n-1) * ... * (n+2))/n!
+            /*
             long n = long.Parse(Console.ReadLine());
             long catalanNumber = 1;
             long factorialN = 1;
@@ -35,7 +51,7 @@ namespace Chapter6ExercisesSolutions
             }
             Console.WriteLine(catalanNumber/factorialN);
             Console.Read();
-
+            */
 
             // Exercise 7
             // Calculating N!*K!/(N-K)! Program
