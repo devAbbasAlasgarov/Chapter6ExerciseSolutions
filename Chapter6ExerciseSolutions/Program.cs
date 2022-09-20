@@ -18,8 +18,24 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
-            // Exercise 5
+            // Exercise 6
+            // calculation of N!/K!
+            int N = int.Parse(Console.ReadLine());
+            int K = int.Parse(Console.ReadLine());
+            int result = 1;
 
+            for(int i = K+1; i <= N; i++)
+            {
+                result = result * i;
+                
+            }
+            Console.WriteLine(result);
+            
+            Console.Read();
+
+            // Exercise 5
+            // Sum of Fibbonacci numbers
+            /*
             int N = int.Parse(Console.ReadLine());
             int[] array = new int[N] ;
             array[0] = 0;
@@ -35,9 +51,11 @@ namespace Chapter6ExercisesSolutions
                 Console.Write(array[i] + " ");
                 sumOfFibonacciNumbers = sumOfFibonacciNumbers + array[i];
             }
-            Console.WriteLine("\nSum of first {0} fibonacci numbers is {1}", N, sumOfFibonacciNumbers);
-            
+            Console.WriteLine("\nSum of first {0} fibonacci numbers is {1}",
+                                N, sumOfFibonacciNumbers);
             Console.Read();
+
+            */
 
             // Exercise 4
             /*
