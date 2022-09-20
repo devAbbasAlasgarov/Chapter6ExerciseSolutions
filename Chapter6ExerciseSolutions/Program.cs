@@ -20,13 +20,29 @@ namespace Chapter6ExercisesSolutions
 
             // Exercise 8
 
+            // Calculating n-th Catalan number by given n
+
+            long n = long.Parse(Console.ReadLine());
+            long catalanNumber = 1;
+            long factorialN = 1;
+            for(long i = 2*n; i >= n+2; i--)
+            {
+                catalanNumber = catalanNumber * i;
+            }
+            for (long i = n; i >= 1; i--)
+            {
+                factorialN = factorialN * i;
+            }
+            Console.WriteLine(catalanNumber/factorialN);
+            Console.Read();
+
 
             // Exercise 7
             // Calculating N!*K!/(N-K)! Program
 
             // Solution 2
             // N! * K! / (N - K)! =  (N! / (K! * (N - K)!)) * K! * K!
-            
+            /*
             long N = int.Parse(Console.ReadLine());
             long K = int.Parse(Console.ReadLine());
             long factorialK = 1;
