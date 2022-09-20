@@ -18,8 +18,34 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
+            // Exercise 7
+
+            int N = int.Parse(Console.ReadLine());
+            int K = int.Parse(Console.ReadLine());
+            int factorialN = 1;
+            int factorialK = 1;
+            int factorialNminusK = 1;
+            double result = 0;
+
+            for(int i = 1; i <= N; i++)
+            {
+                factorialN = factorialN * i;
+            }
+            for (int i = 1; i <= K; i++)
+            {
+                factorialK = factorialK * i;
+            }
+            for (int i = 1; i <= N-K; i++)
+            {
+                factorialNminusK = factorialNminusK * i;
+            }
+            result = factorialN * factorialK / factorialNminusK;
+            Console.WriteLine(result);
+            Console.Read();
+
             // Exercise 6
-            // calculation of N!/K!
+            // Calculating N!/K! Program
+            /*
             int N = int.Parse(Console.ReadLine());
             int K = int.Parse(Console.ReadLine());
             int result = 1;
@@ -32,6 +58,7 @@ namespace Chapter6ExercisesSolutions
             Console.WriteLine(result);
             
             Console.Read();
+            */
 
             // Exercise 5
             // Sum of Fibbonacci numbers
