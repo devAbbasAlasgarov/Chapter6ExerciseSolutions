@@ -17,7 +17,35 @@ namespace Chapter6ExercisesSolutions
         {
 
             // Chapter 6 Exercises Solutions
+
+            // Exercise 10
+
+            int n = int.Parse(Console.ReadLine());
             
+            int[,] arr = new int[n+1,n+1];
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    arr[i, j] = i+j+1;
+                    if (arr[i, j] < 10)
+                    {
+                        Console.Write(arr[i, j] + "   ");
+                    }
+                    else
+                    {
+                        Console.Write(arr[i, j] + "  ");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            
+
+            Console.Read();
+
+            // Exercise 9
+            /*
             double n = double.Parse(Console.ReadLine());
             double x = double.Parse(Console.ReadLine());
             double factorialN = 1;
@@ -31,7 +59,7 @@ namespace Chapter6ExercisesSolutions
             
             Console.WriteLine(sum+1);
             Console.Read();
-            Console.Read();
+            */
 
             // Exercise 8
 
