@@ -18,30 +18,61 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
-            // Exercise 7
+            // Exercise 8
 
-            int N = int.Parse(Console.ReadLine());
-            int K = int.Parse(Console.ReadLine());
-            int factorialN = 1;
-            int factorialK = 1;
-            int factorialNminusK = 1;
+
+            // Exercise 7
+            // Calculating N!*K!/(N-K)! Program
+
+            // Solution 2
+            // N! * K! / (N - K)! =  (N! / (K! * (N - K)!)) * K! * K!
+            
+            long N = int.Parse(Console.ReadLine());
+            long K = int.Parse(Console.ReadLine());
+            long factorialK = 1;
+            long specialFormula = 1;
             double result = 0;
 
-            for(int i = 1; i <= N; i++)
+            for(long i = N-K+1; i <= N; i++)
             {
-                factorialN = factorialN * i;
+                specialFormula = specialFormula * i;
             }
-            for (int i = 1; i <= K; i++)
+
+            for (long i = 1; i <= K; i++)
             {
                 factorialK = factorialK * i;
             }
-            for (int i = 1; i <= N-K; i++)
+            result = specialFormula * factorialK;
+            Console.WriteLine(factorialK);
+            Console.WriteLine(result);
+            Console.Read();
+            
+
+            // Solution 1
+            /*
+            long N = int.Parse(Console.ReadLine());
+            long K = int.Parse(Console.ReadLine());
+            long factorialN = 1;
+            long factorialK = 1;
+            long factorialNminusK = 1;
+            long result = 0;
+
+            for(long i = 1; i <= N; i++)
+            {
+                factorialN = factorialN * i;
+            }
+            for (long i = 1; i <= K; i++)
+            {
+                factorialK = factorialK * i;
+            }
+            for (long i = 1; i <= N-K; i++)
             {
                 factorialNminusK = factorialNminusK * i;
             }
             result = factorialN * factorialK / factorialNminusK;
             Console.WriteLine(result);
             Console.Read();
+            */
 
             // Exercise 6
             // Calculating N!/K! Program
