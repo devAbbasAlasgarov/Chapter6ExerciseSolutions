@@ -18,11 +18,36 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
-            // Exercise 10
+            // Exercise 11
+            // How many zeroes the factorial of a given number ends
 
+            long N = long.Parse(Console.ReadLine());
+            long factorialN = 1;
+            double sumOfZeroes = 0;
+
+            for(long i = N; i >= 1; i--)
+            {
+                factorialN = factorialN * i;
+            }
+
+            for(long i = 1; i <= N; i++)
+            {
+                sumOfZeroes = sumOfZeroes + N / Math.Pow(5, i);
+            }
+            long longNumber = Convert.ToInt64(sumOfZeroes);
+            Console.WriteLine("Sum of zeroes: " + longNumber);
+
+            Console.WriteLine(factorialN);
+            Console.Read();
+
+
+
+            // Exercise 10
+            // Matrix of numbers
+            /*
             int n = int.Parse(Console.ReadLine());
-            
             int[,] arr = new int[n+1,n+1];
+
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -39,10 +64,8 @@ namespace Chapter6ExercisesSolutions
                 }
                 Console.WriteLine();
             }
-
-            
-
             Console.Read();
+            */
 
             // Exercise 9
             /*
