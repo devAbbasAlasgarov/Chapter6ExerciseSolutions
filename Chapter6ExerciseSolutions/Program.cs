@@ -18,9 +18,45 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
 
+            // Exercise 13
+            // Converting from binary to decimal with Horner Scheme
+            /*
+            string binaryNumber = Console.ReadLine();
+            int decimalNumber = int.Parse(binaryNumber[0].ToString());
+            
+            for (int i = 1; i < binaryNumber.Length; i++)
+            {
+                decimalNumber = decimalNumber * 2 + int.Parse(binaryNumber[i].ToString());
+            }
+            Console.WriteLine(decimalNumber);
+            Console.Read();
+            */
+
+            // Exercise 12
+            // Converting from decimal to binary number
+            /*
+            int number = int.Parse(Console.ReadLine());
+            string result = ""; 
+            for(int i = number; i > 0; i=i/2)
+            {
+
+                if(i % 2 !=0)
+                {
+                    result = "1" + result;
+                }
+                else
+                {
+                    result = "0" + result;
+                }
+            }
+            Console.WriteLine(result);
+            Console.Read();
+            */
             // Exercise 11
             // How many zeroes the factorial of a given number ends
+            // **** not completed ****
 
+            /*
             long N = long.Parse(Console.ReadLine());
             long factorialN = 1;
             double sumOfZeroes = 0;
@@ -39,7 +75,7 @@ namespace Chapter6ExercisesSolutions
 
             Console.WriteLine(factorialN);
             Console.Read();
-
+            */
 
 
             // Exercise 10
