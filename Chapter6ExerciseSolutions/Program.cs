@@ -18,7 +18,9 @@ namespace Chapter6ExercisesSolutions
 
             // Chapter 6 Exercises Solutions
             // Exercise 16
-            // 1 to N in random order
+            // Prints the numbers from 1 to N in random order
+            // swap pairs of elements in array
+            /*
             Random random = new Random();
             int number = int.Parse(Console.ReadLine());
             int[] array = new int[number];
@@ -45,6 +47,7 @@ namespace Chapter6ExercisesSolutions
             }
 
             Console.Read();
+            */
 
             // Exercise 15
             // Converting from hexadecimal to decimal number
