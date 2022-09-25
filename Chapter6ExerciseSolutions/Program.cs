@@ -17,6 +17,61 @@ namespace Chapter6ExercisesSolutions
         {
 
             // Chapter 6 Exercises Solutions
+            // Exercise 14
+            // Converting from decimal to hexadecimal number
+            // A=10, B=11, C=12, D=13, E=14, F=15
+
+            int decimalNumber = int.Parse(Console.ReadLine());
+            string hexadecimalNumber = "";
+            int remainder;
+
+            if (decimalNumber == 0)
+            {
+                Console.WriteLine("Answer");
+                Console.WriteLine(decimalNumber);
+            }
+            else
+            {
+                for (; decimalNumber > 0;)
+                {
+                    remainder = decimalNumber % 16;
+                    decimalNumber = decimalNumber / 16;
+                    if (remainder == 10)
+                    {
+                        hexadecimalNumber = "A" + hexadecimalNumber;
+                    }
+                    if (remainder == 11)
+                    {
+                        hexadecimalNumber = "B" + hexadecimalNumber;
+                    }
+                    if (remainder == 12)
+                    {
+                        hexadecimalNumber = "C" + hexadecimalNumber;
+                    }
+                    if (remainder == 13)
+                    {
+                        hexadecimalNumber = "D" + hexadecimalNumber;
+                    }
+                    if (remainder == 14)
+                    {
+                        hexadecimalNumber = "E" + hexadecimalNumber;
+                    }
+                    if (remainder == 15)
+                    {
+                        hexadecimalNumber = "F" + hexadecimalNumber;
+                    }
+                    if (remainder >= 0 && remainder < 10)
+                    {
+                        hexadecimalNumber = remainder.ToString() + hexadecimalNumber;
+                    }
+
+                }
+                Console.WriteLine("Answer");
+                Console.WriteLine(hexadecimalNumber);
+            }
+            
+            Console.Read();
+            
 
             // Exercise 13
             // Converting from binary to decimal with Horner Scheme
