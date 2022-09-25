@@ -17,10 +17,40 @@ namespace Chapter6ExercisesSolutions
         {
 
             // Chapter 6 Exercises Solutions
+            // Exercise 16
+            // 1 to N in random order
+            Random random = new Random();
+            int number = int.Parse(Console.ReadLine());
+            int[] array = new int[number];
+
+            for(int i = 0; i < number; i++)
+            {
+                array[i] = random.Next(number);
+                Console.Write("   " + array[i]);
+            }
+
+            int temporary = 0;
+            int temporaryOne = random.Next(number);
+            int temporaryTwo = random.Next(number);
+
+            temporary = array[temporaryOne];
+            array[temporaryOne] = array[temporaryTwo];
+            array[temporaryTwo] = temporary;
+
+            Console.WriteLine();
+
+            for (int i = 0; i < number; i++)
+            {
+                Console.Write("   " + array[i]);
+            }
+
+            Console.Read();
+
             // Exercise 15
             // Converting from hexadecimal to decimal number
             // A=10, B=11, C=12, D=13, E=14, F=15
 
+            /*
             string hexadecimalNumber = Console.ReadLine();
             int number = 1;
             double decimalNumber = 0;
@@ -62,6 +92,7 @@ namespace Chapter6ExercisesSolutions
 
             Console.WriteLine(decimalNumber);
             Console.Read();
+            */
 
             // Exercise 14
             // Converting from decimal to hexadecimal number
