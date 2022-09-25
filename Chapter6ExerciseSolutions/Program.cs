@@ -17,10 +17,56 @@ namespace Chapter6ExercisesSolutions
         {
 
             // Chapter 6 Exercises Solutions
+            // Exercise 15
+            // Converting from hexadecimal to decimal number
+            // A=10, B=11, C=12, D=13, E=14, F=15
+
+            string hexadecimalNumber = Console.ReadLine();
+            int number = 1;
+            double decimalNumber = 0;
+
+            for(int i = hexadecimalNumber.Length-1, j = 0; i >= 0; i--, j++)
+            {
+                if (hexadecimalNumber[i] == 'A')
+                {
+                    number = 10;
+                }
+                if (hexadecimalNumber[i] == 'B')
+                {
+                    number = 11;
+                }
+                if (hexadecimalNumber[i] == 'C')
+                {
+                    number = 12;
+                }
+                if (hexadecimalNumber[i] == 'D')
+                {
+                    number = 13;
+                }
+                if (hexadecimalNumber[i] == 'E')
+                {
+                    number = 14;
+                }
+                if (hexadecimalNumber[i] == 'F')
+                {
+                    number = 15;
+                }
+                
+                if (hexadecimalNumber[i] >= '0' && hexadecimalNumber[i] <= '9')
+                {
+                    number = int.Parse(hexadecimalNumber[i].ToString());
+                }
+
+                decimalNumber = decimalNumber + number * Math.Pow(16, j);
+            }
+
+            Console.WriteLine(decimalNumber);
+            Console.Read();
+
             // Exercise 14
             // Converting from decimal to hexadecimal number
             // A=10, B=11, C=12, D=13, E=14, F=15
-
+            /*
             int decimalNumber = int.Parse(Console.ReadLine());
             string hexadecimalNumber = "";
             int remainder;
@@ -71,7 +117,7 @@ namespace Chapter6ExercisesSolutions
             }
             
             Console.Read();
-            
+            */
 
             // Exercise 13
             // Converting from binary to decimal with Horner Scheme
