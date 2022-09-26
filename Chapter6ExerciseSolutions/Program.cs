@@ -14,6 +14,11 @@ namespace Chapter6ExercisesSolutions
     {
 
         // Chapter 6 Exercises Solutions
+
+        // Exercise 18
+        // Outputs a matrix in the form of a spiral
+        // NOT COMPLETED. will be done later...
+
         // Exercise 17
         // Greatest Common Divisor(GCD) and Least Common Multiple(LCM)
         /*
