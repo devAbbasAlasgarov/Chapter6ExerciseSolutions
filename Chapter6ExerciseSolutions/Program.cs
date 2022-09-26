@@ -13,10 +13,53 @@ namespace Chapter6ExercisesSolutions
     class MainClass
     {
 
+        // Chapter 6 Exercises Solutions
+        // Exercise 17
+        // Greatest Common Divisor(GCD) and Least Common Multiple(LCM)
+        /*
+        public static int GCD(int p, int q)
+        {
+            if (q == 0 && p != 0)
+            {
+                return p;
+            }
+            else if(q != 0 && p == 0)
+            {
+                return q;
+            }
+            else if(q == 0 && p == 0)
+            {
+                return 0;
+            }
+
+            int r = p % q;
+            return GCD(q, r);
+        }
+
+        public static int LCM(int p, int q)
+        {
+            
+            return (p*q)/GCD(p,q);
+        }
+        */
+
         public static void Main(string[] args)
         {
 
             // Chapter 6 Exercises Solutions
+            // Exercise 17
+            // Greatest Common Divisor(GCD) and Least Common Multiple(LCM)
+            /*
+            int p = int.Parse(Console.ReadLine());
+            int q = int.Parse(Console.ReadLine());
+
+
+
+            Console.WriteLine("GCD : " + GCD(p, q));
+            Console.WriteLine("LCM : " + LCM(p, q));
+            Console.Read();
+            */
+
             // Exercise 16
             // Prints the numbers from 1 to N in random order
             // swap pairs of elements in array
